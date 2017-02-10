@@ -11,6 +11,14 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 import profbanku.profbanku.R;
+import profbanku.profbanku.ReasoningActivities.BloodRelation.BloodRelationActivity;
+import profbanku.profbanku.ReasoningActivities.CodingDecoding.CodingDecodingActivity;
+import profbanku.profbanku.ReasoningActivities.DirectionDistance.DirectionDistanceActivity;
+import profbanku.profbanku.ReasoningActivities.InputOutput.InputOutputActivity;
+import profbanku.profbanku.ReasoningActivities.LogicalReasoning.LogicalReasoningActivity;
+import profbanku.profbanku.ReasoningActivities.NumberSeries.NumberSeriesActivity;
+import profbanku.profbanku.ReasoningActivities.RankingOrdering.RankingOrderingActivity;
+import profbanku.profbanku.ReasoningActivities.Syllogisms.SyllogismsActivity;
 
 public class ReasoningActivity extends AppCompatActivity {
 

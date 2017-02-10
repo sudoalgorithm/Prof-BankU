@@ -21,14 +21,16 @@
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
-    <android:uses-permission android:name="android.permission.READ_PHONE_STATE" />
-    <android:uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
+        android:hardwareAccelerated="false"
+        android:largeHeap="true"
         android:theme="@style/AppTheme">
         <meta-data
             android:name="com.facebook.sdk.ApplicationId"
@@ -90,121 +92,211 @@
             android:parentActivityName=".Activities.DashboardActivity"
             android:theme="@style/ActivityTheme" />
         <activity
-            android:name=".QuantitativeAptitudeActivities.BasicNumbersActivity"
+            android:name=".QuantitativeAptitudeActivities.BasicNumbers.BasicNumbersActivity"
             android:parentActivityName=".QuantitativeAptitudeActivities.QuantitativeAptitudeActivity"
             android:theme="@style/ActivityTheme" />
         <activity
-            android:name=".QuantitativeAptitudeActivities.BasicCalculationsActivity"
+            android:name=".QuantitativeAptitudeActivities.BasicCalculation.BasicCalculationsActivity"
             android:parentActivityName=".QuantitativeAptitudeActivities.QuantitativeAptitudeActivity"
             android:theme="@style/ActivityTheme" />
         <activity
-            android:name=".QuantitativeAptitudeActivities.PercentageBasicActivity"
+            android:name=".QuantitativeAptitudeActivities.PercentageBasic.PercentageBasicActivity"
             android:parentActivityName=".QuantitativeAptitudeActivities.QuantitativeAptitudeActivity"
             android:theme="@style/ActivityTheme" />
         <activity
-            android:name=".QuantitativeAptitudeActivities.ProfitLossActivity"
+            android:name=".QuantitativeAptitudeActivities.ProfitLoss.ProfitLossActivity"
             android:parentActivityName=".QuantitativeAptitudeActivities.QuantitativeAptitudeActivity"
             android:theme="@style/ActivityTheme" />
         <activity
-            android:name=".QuantitativeAptitudeActivities.CISIActiviy"
+            android:name=".QuantitativeAptitudeActivities.CISI.CISIActiviy"
             android:parentActivityName=".QuantitativeAptitudeActivities.QuantitativeAptitudeActivity"
             android:theme="@style/ActivityTheme" />
         <activity
-            android:name=".QuantitativeAptitudeActivities.RatioMixtureActivity"
+            android:name=".QuantitativeAptitudeActivities.RatioMixture.RatioMixtureActivity"
             android:parentActivityName=".QuantitativeAptitudeActivities.QuantitativeAptitudeActivity"
             android:theme="@style/ActivityTheme" />
         <activity
-            android:name=".QuantitativeAptitudeActivities.SpeedDistanceTimeActivity"
+            android:name=".QuantitativeAptitudeActivities.SpeedDistanceTime.SpeedDistanceTimeActivity"
             android:parentActivityName=".QuantitativeAptitudeActivities.QuantitativeAptitudeActivity"
             android:theme="@style/ActivityTheme" />
         <activity
-            android:name=".QuantitativeAptitudeActivities.BoatsStreamsActivity"
+            android:name=".QuantitativeAptitudeActivities.BoatsStreams.BoatsStreamsActivity"
             android:parentActivityName=".QuantitativeAptitudeActivities.QuantitativeAptitudeActivity"
             android:theme="@style/ActivityTheme" />
         <activity
-            android:name=".QuantitativeAptitudeActivities.TrainsPlatformsActivity"
+            android:name=".QuantitativeAptitudeActivities.TrainsPlatforms.TrainsPlatformsActivity"
             android:parentActivityName=".QuantitativeAptitudeActivities.QuantitativeAptitudeActivity"
             android:theme="@style/ActivityTheme" />
         <activity
-            android:name=".QuantitativeAptitudeActivities.TimeWorkActivity"
+            android:name=".QuantitativeAptitudeActivities.TimeWork.TimeWorkActivity"
             android:parentActivityName=".QuantitativeAptitudeActivities.QuantitativeAptitudeActivity"
             android:theme="@style/ActivityTheme" />
         <activity
-            android:name=".QuantitativeAptitudeActivities.HCFLCMActivity"
+            android:name=".QuantitativeAptitudeActivities.HCFLCM.HCFLCMActivity"
             android:parentActivityName=".QuantitativeAptitudeActivities.QuantitativeAptitudeActivity"
             android:theme="@style/ActivityTheme" />
         <activity
-            android:name=".QuantitativeAptitudeActivities.AveragesActivity"
+            android:name=".QuantitativeAptitudeActivities.Average.AveragesActivity"
             android:parentActivityName=".QuantitativeAptitudeActivities.QuantitativeAptitudeActivity"
             android:theme="@style/ActivityTheme" />
         <activity
-            android:name=".QuantitativeAptitudeActivities.AlgebraActivity"
+            android:name=".QuantitativeAptitudeActivities.Algebra.AlgebraActivity"
             android:parentActivityName=".QuantitativeAptitudeActivities.QuantitativeAptitudeActivity"
             android:theme="@style/ActivityTheme" />
         <activity
-            android:name=".QuantitativeAptitudeActivities.GeometryActivity"
+            android:name=".QuantitativeAptitudeActivities.Geometry.GeometryActivity"
             android:parentActivityName=".QuantitativeAptitudeActivities.QuantitativeAptitudeActivity"
             android:theme="@style/ActivityTheme" />
         <activity
-            android:name=".QuantitativeAptitudeActivities.Mensuration2DActivity"
+            android:name=".QuantitativeAptitudeActivities.Mensuration2D.Mensuration2DActivity"
             android:parentActivityName=".QuantitativeAptitudeActivities.QuantitativeAptitudeActivity"
             android:theme="@style/ActivityTheme" />
         <activity
-            android:name=".QuantitativeAptitudeActivities.Mensuration3DActivity"
+            android:name=".QuantitativeAptitudeActivities.Mensuration3D.Mensuration3DActivity"
             android:parentActivityName=".QuantitativeAptitudeActivities.QuantitativeAptitudeActivity"
             android:theme="@style/ActivityTheme" />
         <activity
-            android:name=".QuantitativeAptitudeActivities.DIActivity"
+            android:name=".QuantitativeAptitudeActivities.DI.DIActivity"
             android:parentActivityName=".QuantitativeAptitudeActivities.QuantitativeAptitudeActivity"
             android:theme="@style/ActivityTheme" />
         <activity
-            android:name=".QuantitativeAptitudeActivities.ProbabilityActivity"
+            android:name=".QuantitativeAptitudeActivities.Probability.ProbabilityActivity"
             android:parentActivityName=".QuantitativeAptitudeActivities.QuantitativeAptitudeActivity"
             android:theme="@style/ActivityTheme" />
         <activity
-            android:name=".QuantitativeAptitudeActivities.PermutationsCombinationsActivity"
+            android:name=".QuantitativeAptitudeActivities.PermutationsCombinations.PermutationsCombinationsActivity"
             android:parentActivityName=".QuantitativeAptitudeActivities.QuantitativeAptitudeActivity"
             android:theme="@style/ActivityTheme" />
         <activity
-            android:name=".QuantitativeAptitudeActivities.TrigonometryActivity"
+            android:name=".QuantitativeAptitudeActivities.Trigonometry.TrigonometryActivity"
             android:parentActivityName=".QuantitativeAptitudeActivities.QuantitativeAptitudeActivity"
             android:theme="@style/ActivityTheme" />
         <activity
-            android:name=".ReasoningActivities.SyllogismsActivity"
+            android:name=".ReasoningActivities.Syllogisms.SyllogismsActivity"
             android:parentActivityName=".ReasoningActivities.ReasoningActivity"
             android:theme="@style/ActivityTheme" />
         <activity
-            android:name=".ReasoningActivities.CodingDecodingActivity"
+            android:name=".ReasoningActivities.CodingDecoding.CodingDecodingActivity"
             android:parentActivityName=".ReasoningActivities.ReasoningActivity"
             android:theme="@style/ActivityTheme" />
         <activity
-            android:name=".ReasoningActivities.DirectionDistanceActivity"
+            android:name=".ReasoningActivities.DirectionDistance.DirectionDistanceActivity"
             android:parentActivityName=".ReasoningActivities.ReasoningActivity"
             android:theme="@style/ActivityTheme" />
         <activity
-            android:name=".ReasoningActivities.LogicalReasoningActivity"
+            android:name=".ReasoningActivities.LogicalReasoning.LogicalReasoningActivity"
             android:parentActivityName=".ReasoningActivities.ReasoningActivity"
             android:theme="@style/ActivityTheme" />
         <activity
-            android:name=".ReasoningActivities.NumberSeriesActivity"
+            android:name=".ReasoningActivities.NumberSeries.NumberSeriesActivity"
             android:parentActivityName=".ReasoningActivities.ReasoningActivity"
             android:theme="@style/ActivityTheme" />
         <activity
-            android:name=".ReasoningActivities.RankingOrderingActivity"
+            android:name=".ReasoningActivities.RankingOrdering.RankingOrderingActivity"
             android:parentActivityName=".ReasoningActivities.ReasoningActivity"
             android:theme="@style/ActivityTheme" />
         <activity
-            android:name=".ReasoningActivities.BloodRelationActivity"
+            android:name=".ReasoningActivities.BloodRelation.BloodRelationActivity"
             android:parentActivityName=".ReasoningActivities.ReasoningActivity"
             android:theme="@style/ActivityTheme" />
         <activity
-            android:name=".ReasoningActivities.InputOutputActivity"
+            android:name=".ReasoningActivities.InputOutput.InputOutputActivity"
             android:parentActivityName=".ReasoningActivities.ReasoningActivity"
             android:theme="@style/ActivityTheme" />
-        <activity android:name=".QuantitativeAptitudeActivities.ChildLayoutAL" />
         <activity android:name=".Fragments.FactsheetFragment" />
         <activity android:name=".Fragments.VideoFragment" />
-        <activity android:name=".Fragments.QuestionFragment"></activity>
+        <activity android:name=".Fragments.QuestionFragment" />
+        <activity android:name=".QuantitativeAptitudeActivities.AlgebraActivities.Factsheetal" />
+        <activity android:name=".QuantitativeAptitudeActivities.AlgebraActivities.Videosal" />
+        <activity android:name=".QuantitativeAptitudeActivities.AlgebraActivities.questional" />
+        <activity android:name=".QuantitativeAptitudeActivities.AlgebraActivities.FactsheetAL" />
+        <activity android:name=".QuantitativeAptitudeActivities.AlgebraActivities.VideosAL" />
+        <activity android:name=".QuantitativeAptitudeActivities.AlgebraActivities.QuestionAL" />
+        <activity android:name=".QuantitativeAptitudeActivities.AlgebraActivities.AlgebraFragment" />
+        <activity android:name=".QuantitativeAptitudeActivities.Algebra.FactsheetAlgebraFragment" />
+        <activity android:name=".QuantitativeAptitudeActivities.Algebra.QuestionsFragment" />
+        <activity android:name=".QuantitativeAptitudeActivities.Algebra.VideoFragment" />
+        <activity android:name=".QuantitativeAptitudeActivities.Average.FactsheetAverageActivity" />
+        <activity android:name=".QuantitativeAptitudeActivities.Average.QuestionAverageActivity" />
+        <activity android:name=".QuantitativeAptitudeActivities.Average.VideosAverageActivity" />
+        <activity android:name=".QuantitativeAptitudeActivities.BasicCalculation.FactsheetBasicCalculationFragment" />
+        <activity android:name=".QuantitativeAptitudeActivities.BasicCalculation.QuestionsBasicCalculationFragment" />
+        <activity android:name=".QuantitativeAptitudeActivities.BasicCalculation.VideoBasicCalculationFragment" />
+        <activity android:name=".QuantitativeAptitudeActivities.BasicNumbers.FactsheetBasicNumberFragment" />
+        <activity android:name=".QuantitativeAptitudeActivities.BasicNumbers.QuestionsBasicNumberFragment" />
+        <activity android:name=".QuantitativeAptitudeActivities.BasicNumbers.VideoBasicNumberFragment" />
+        <activity android:name=".QuantitativeAptitudeActivities.BoatsStreams.FactsheetBoatsStreamsFragment" />
+        <activity android:name=".QuantitativeAptitudeActivities.BoatsStreams.QuestionsBoatsStreamsFragment" />
+        <activity android:name=".QuantitativeAptitudeActivities.BoatsStreams.VideoBoatsStreamsFragment" />
+        <activity android:name=".QuantitativeAptitudeActivities.CISI.FactsheetCISIFragment" />
+        <activity android:name=".QuantitativeAptitudeActivities.CISI.QuestionsCISIFragment" />
+        <activity android:name=".QuantitativeAptitudeActivities.CISI.VideosCISIFragment" />
+        <activity android:name=".QuantitativeAptitudeActivities.DI.FactsheetDIFragment" />
+        <activity android:name=".QuantitativeAptitudeActivities.DI.QuestionsDIFragment" />
+        <activity android:name=".QuantitativeAptitudeActivities.DI.VideosDIFragment" />
+        <activity android:name=".QuantitativeAptitudeActivities.Geometry.FactsheetGeometryFragment" />
+        <activity android:name=".QuantitativeAptitudeActivities.Geometry.QuestionsGeometryFragment" />
+        <activity android:name=".QuantitativeAptitudeActivities.Geometry.VideosGeometryFragment" />
+        <activity android:name=".QuantitativeAptitudeActivities.HCFLCM.FactsheetHCFLCMFragment" />
+        <activity android:name=".QuantitativeAptitudeActivities.HCFLCM.QuestionsHCFLCMFragment" />
+        <activity android:name=".QuantitativeAptitudeActivities.HCFLCM.VideosHCFLCMFragment" />
+        <activity android:name=".QuantitativeAptitudeActivities.Mensuration2D.FactsheetMensuration2DFragment" />
+        <activity android:name=".QuantitativeAptitudeActivities.Mensuration2D.QuestionsMensuration2DFragment" />
+        <activity android:name=".QuantitativeAptitudeActivities.Mensuration2D.VideosMensuration2DFragment" />
+        <activity android:name=".QuantitativeAptitudeActivities.Mensuration3D.FactsheetMensuration3DFragment" />
+        <activity android:name=".QuantitativeAptitudeActivities.Mensuration3D.QuestionsMensuration3DFragment" />
+        <activity android:name=".QuantitativeAptitudeActivities.Mensuration3D.VideosMensuration3DFragment" />
+        <activity android:name=".QuantitativeAptitudeActivities.PercentageBasic.FactsheetPercentageBasicFragment" />
+        <activity android:name=".QuantitativeAptitudeActivities.PercentageBasic.QuestionsPercentageBasicFragment" />
+        <activity android:name=".QuantitativeAptitudeActivities.PercentageBasic.VideosPercentageBasicFragment" />
+        <activity android:name=".QuantitativeAptitudeActivities.PermutationsCombinations.FactsheetPermutationsCombinationsFragment" />
+        <activity android:name=".QuantitativeAptitudeActivities.PermutationsCombinations.QuestionsPermutationsCombinationsFragment" />
+        <activity android:name=".QuantitativeAptitudeActivities.PermutationsCombinations.VideosPermutationsCombinationsFragment" />
+        <activity android:name=".QuantitativeAptitudeActivities.Probability.FactsheetProbabilityFragment" />
+        <activity android:name=".QuantitativeAptitudeActivities.Probability.QuestionsProbabilityFragment" />
+        <activity android:name=".QuantitativeAptitudeActivities.Probability.VideosProbabilityFragment" />
+        <activity android:name=".QuantitativeAptitudeActivities.ProfitLoss.FactsheetProfitLossFragment" />
+        <activity android:name=".QuantitativeAptitudeActivities.ProfitLoss.QuestionsProfitLossFragment" />
+        <activity android:name=".QuantitativeAptitudeActivities.ProfitLoss.VideosProfitLossFragment" />
+        <activity android:name=".QuantitativeAptitudeActivities.RatioMixture.FactsheetRatioMixtureFragment" />
+        <activity android:name=".QuantitativeAptitudeActivities.RatioMixture.QuestionsRatioMixtureFragment" />
+        <activity android:name=".QuantitativeAptitudeActivities.RatioMixture.VideosRatioMixtureFragment" />
+        <activity android:name=".QuantitativeAptitudeActivities.SpeedDistanceTime.FactsheetSpeedDistanceTimeFragment" />
+        <activity android:name=".QuantitativeAptitudeActivities.SpeedDistanceTime.QuestionsSpeedDistanceTimeFragment" />
+        <activity android:name=".QuantitativeAptitudeActivities.SpeedDistanceTime.VideosSpeedDistanceTimeFragment" />
+        <activity android:name=".QuantitativeAptitudeActivities.TimeWork.FactsheetTimeWorkFragment" />
+        <activity android:name=".QuantitativeAptitudeActivities.TimeWork.QuestionsTimeWorkFragment" />
+        <activity android:name=".QuantitativeAptitudeActivities.TimeWork.VideosTimeWorkFragment" />
+        <activity android:name=".QuantitativeAptitudeActivities.TrainsPlatforms.FactsheetTrainsPlatformsFragment" />
+        <activity android:name=".QuantitativeAptitudeActivities.TrainsPlatforms.QuestionsTrainsPlatformsFragment" />
+        <activity android:name=".QuantitativeAptitudeActivities.TrainsPlatforms.VideosTrainsPlatformsFragment" />
+        <activity android:name=".QuantitativeAptitudeActivities.Trigonometry.FactsheetTrigonometryFragment" />
+        <activity android:name=".QuantitativeAptitudeActivities.Trigonometry.QuestionsTrigonometryFragment" />
+        <activity android:name=".QuantitativeAptitudeActivities.Trigonometry.VideosTrigonometryFragment" />
+        <activity android:name=".ReasoningActivities.BloodRelation.FactsheetBloodRelationFragment" />
+        <activity android:name=".ReasoningActivities.BloodRelation.QuestionsBloodRelationFragment" />
+        <activity android:name=".ReasoningActivities.BloodRelation.VideoBloodRelationFragment" />
+        <activity android:name=".ReasoningActivities.CodingDecoding.FactsheetCodingDecodingFragment" />
+        <activity android:name=".ReasoningActivities.CodingDecoding.QuestionsCodingDecodingFragment" />
+        <activity android:name=".ReasoningActivities.CodingDecoding.VideoCodingDecodingFragment" />
+        <activity android:name=".ReasoningActivities.DirectionDistance.FactsheetDirectionDistanceFragment" />
+        <activity android:name=".ReasoningActivities.DirectionDistance.QuestionsDirectionDistanceFragment" />
+        <activity android:name=".ReasoningActivities.DirectionDistance.VideoDirectionDistanceFragment" />
+        <activity android:name=".ReasoningActivities.InputOutput.FactsheetInputOutputFragment" />
+        <activity android:name=".ReasoningActivities.InputOutput.QuestionsInputOutputFragment" />
+        <activity android:name=".ReasoningActivities.InputOutput.VideoInputOutputFragment" />
+        <activity android:name=".ReasoningActivities.LogicalReasoning.FactsheetLogicalReasoningFragment" />
+        <activity android:name=".ReasoningActivities.LogicalReasoning.QuestionsLogicalReasoningFragment" />
+        <activity android:name=".ReasoningActivities.LogicalReasoning.VideoLogicalReasoningFragment" />
+        <activity android:name=".ReasoningActivities.NumberSeries.FactsheetNumberSeriesFragment" />
+        <activity android:name=".ReasoningActivities.NumberSeries.QuestionsNumberSeriesFragment" />
+        <activity android:name=".ReasoningActivities.NumberSeries.VideoNumberSeriesFragment" />
+        <activity android:name=".ReasoningActivities.RankingOrdering.FactsheetRankingOrderingFragment" />
+        <activity android:name=".ReasoningActivities.RankingOrdering.QuestionsRankingOrderingFragment" />
+        <activity android:name=".ReasoningActivities.RankingOrdering.VideoRankingOrderingFragment" />
+        <activity android:name=".ReasoningActivities.Syllogisms.FactsheetSyllogismsFragment" />
+        <activity android:name=".ReasoningActivities.Syllogisms.QuestionsSyllogismsFragment" />
+        <activity android:name=".ReasoningActivities.Syllogisms.VideoSyllogismsFragment"></activity>
     </application>
 
 </manifest>

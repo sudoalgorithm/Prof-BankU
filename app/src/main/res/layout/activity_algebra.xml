@@ -6,10 +6,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="profbanku.profbanku.QuantitativeAptitudeActivities.AlgebraActivity">
+    tools:context="profbanku.profbanku.QuantitativeAptitudeActivities.Algebra.AlgebraActivity">
 
-    <com.google.android.youtube.player.YouTubePlayerView
-        android:id="@+id/youtubePlayerAlgebra"
+    <fragment
+        android:id="@+id/youtubeFragmentAlgebra"
+        android:name="com.google.android.youtube.player.YouTubePlayerFragment"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
@@ -18,8 +19,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="?attr/colorAccent"
-        android:minHeight="?attr/actionBarSize"
-        >
+        android:minHeight="?attr/actionBarSize">
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -28,11 +29,23 @@
             android:textSize="22sp" />
     </android.support.v7.widget.Toolbar>
 
-    <LinearLayout
-        android:id="@+id/childLayoutAL"
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:elevation="6dp"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:tabIndicatorColor="?attr/colorAccent"
+        app:tabSelectedTextColor="@android:color/black"
+        app:tabTextColor="@android:color/black" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        />
+        android:layout_below="@id/tab_layout" />
+
 
 </LinearLayout>
