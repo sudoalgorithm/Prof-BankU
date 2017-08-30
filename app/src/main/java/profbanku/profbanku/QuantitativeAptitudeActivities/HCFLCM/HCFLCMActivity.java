@@ -19,9 +19,6 @@ import com.google.android.youtube.player.YouTubePlayer;
 import com.google.android.youtube.player.YouTubePlayerFragment;
 
 import profbanku.profbanku.Config;
-import profbanku.profbanku.QuantitativeAptitudeActivities.DI.FactsheetDIFragment;
-import profbanku.profbanku.QuantitativeAptitudeActivities.DI.QuestionsDIFragment;
-import profbanku.profbanku.QuantitativeAptitudeActivities.DI.VideosDIFragment;
 import profbanku.profbanku.R;
 
 import static profbanku.profbanku.R.id.youtubeFragmentHCFLCM;
@@ -122,13 +119,13 @@ public class HCFLCMActivity extends AppCompatActivity {
 
             switch (position) {
                 case 0:
-                    FactsheetDIFragment tab1 = new FactsheetDIFragment();
+                    FactsheetHCFLCMFragment tab1 = new FactsheetHCFLCMFragment();
                     return tab1;
                 case 1:
-                    QuestionsDIFragment tab2 = new QuestionsDIFragment();
+                    QuestionsHCFLCMFragment tab2 = new QuestionsHCFLCMFragment();
                     return tab2;
                 case 2:
-                    VideosDIFragment tab3 = new VideosDIFragment();
+                    VideosHCFLCMFragment tab3 = new VideosHCFLCMFragment();
                     return tab3;
                 default:
                     return null;

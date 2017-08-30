@@ -56,9 +56,9 @@ public class AlgebraActivity extends AppCompatActivity {
 
             @Override
             public void onInitializationFailure(YouTubePlayer.Provider provider, YouTubeInitializationResult youTubeInitializationResult) {
-                if (youTubeInitializationResult.isUserRecoverableError()){
+                if (youTubeInitializationResult.isUserRecoverableError()) {
                     youTubeInitializationResult.getErrorDialog((Activity) getApplicationContext(), RECOVERY_REQUEST).show();
-                }else {
+                } else {
                     String error = String.format("Error initializing youtube player", youTubeInitializationResult.toString());
                     Snackbar.make(mLinearLayout, error, Snackbar.LENGTH_SHORT).show();
                 }
@@ -122,10 +122,10 @@ public class AlgebraActivity extends AppCompatActivity {
                     FactsheetAlgebraFragment tab1 = new FactsheetAlgebraFragment();
                     return tab1;
                 case 1:
-                    QuestionsFragment tab2 = new QuestionsFragment();
+                    VideoFragment tab2 = new VideoFragment();
                     return tab2;
                 case 2:
-                    VideoFragment tab3 = new VideoFragment();
+                    QuestionsFragment tab3 = new QuestionsFragment();
                     return tab3;
                 default:
                     return null;

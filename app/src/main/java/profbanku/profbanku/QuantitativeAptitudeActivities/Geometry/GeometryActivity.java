@@ -19,9 +19,6 @@ import com.google.android.youtube.player.YouTubePlayer;
 import com.google.android.youtube.player.YouTubePlayerFragment;
 
 import profbanku.profbanku.Config;
-import profbanku.profbanku.QuantitativeAptitudeActivities.DI.FactsheetDIFragment;
-import profbanku.profbanku.QuantitativeAptitudeActivities.DI.QuestionsDIFragment;
-import profbanku.profbanku.QuantitativeAptitudeActivities.DI.VideosDIFragment;
 import profbanku.profbanku.R;
 
 import static profbanku.profbanku.R.id.youtubeFragmentGeometry;
@@ -121,13 +118,13 @@ public class GeometryActivity extends AppCompatActivity {
 
             switch (position) {
                 case 0:
-                    FactsheetDIFragment tab1 = new FactsheetDIFragment();
+                    FactsheetGeometryFragment tab1 = new FactsheetGeometryFragment();
                     return tab1;
                 case 1:
-                    QuestionsDIFragment tab2 = new QuestionsDIFragment();
+                    QuestionsGeometryFragment tab2 = new QuestionsGeometryFragment();
                     return tab2;
                 case 2:
-                    VideosDIFragment tab3 = new VideosDIFragment();
+                    VideosGeometryFragment tab3 = new VideosGeometryFragment();
                     return tab3;
                 default:
                     return null;

@@ -31,8 +31,10 @@
         android:background="?attr/colorAccent"/>
 
     <ListView
-        android:id="@+id/listView_verbal"
+        android:id="@+id/list_view_verbal"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
+
+
 
 </LinearLayout>

@@ -19,9 +19,6 @@ import com.google.android.youtube.player.YouTubePlayer;
 import com.google.android.youtube.player.YouTubePlayerFragment;
 
 import profbanku.profbanku.Config;
-import profbanku.profbanku.QuantitativeAptitudeActivities.BasicNumbers.FactsheetBasicNumberFragment;
-import profbanku.profbanku.QuantitativeAptitudeActivities.BasicNumbers.QuestionsBasicNumberFragment;
-import profbanku.profbanku.QuantitativeAptitudeActivities.BasicNumbers.VideoBasicNumberFragment;
 import profbanku.profbanku.R;
 
 import static profbanku.profbanku.R.id.youtubeFragmentBoatsStreams;
@@ -120,13 +117,13 @@ public class BoatsStreamsActivity extends AppCompatActivity {
 
             switch (position) {
                 case 0:
-                    FactsheetBasicNumberFragment tab1 = new FactsheetBasicNumberFragment();
+                    FactsheetBoatsStreamsFragment tab1 = new FactsheetBoatsStreamsFragment();
                     return tab1;
                 case 1:
-                    QuestionsBasicNumberFragment tab2 = new QuestionsBasicNumberFragment();
+                    QuestionsBoatsStreamsFragment tab2 = new QuestionsBoatsStreamsFragment();
                     return tab2;
                 case 2:
-                    VideoBasicNumberFragment tab3 = new VideoBasicNumberFragment();
+                    VideoBoatsStreamsFragment tab3 = new VideoBoatsStreamsFragment();
                     return tab3;
                 default:
                     return null;

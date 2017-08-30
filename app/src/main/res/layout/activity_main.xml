@@ -81,6 +81,7 @@
                 android:textColor="#E91E63" />
 
             <TextView
+                android:id="@+id/sign_up"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginRight="40dp"

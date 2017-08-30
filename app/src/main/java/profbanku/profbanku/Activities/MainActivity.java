@@ -9,6 +9,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 
 import com.facebook.CallbackManager;
 import com.facebook.FacebookCallback;
@@ -33,6 +34,7 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.O
     private LinearLayout mLinearLayout;
     private GoogleApiClient mGoogleApiClient;
     private ImageButton mSignInButton;
+    private TextView mTextView;
     private static final int RC_SIGN_IN = 9009;
     private static final String TAG = "GooglePlusLogin";
 
@@ -45,6 +47,15 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.O
         setContentView(R.layout.activity_main);
         facebookLogin();
         googleLogin();
+
+        mTextView = (TextView) findViewById(R.id.sign_up);
+        mTextView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, SignUpActivity.class));
+
+            }
+        });
     }
 
     private void facebookLogin(){

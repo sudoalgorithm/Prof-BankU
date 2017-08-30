@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_input_output"
     android:layout_width="match_parent"
@@ -7,8 +8,9 @@
     android:orientation="vertical"
     tools:context="profbanku.profbanku.ReasoningActivities.InputOutput.InputOutputActivity">
 
-    <com.google.android.youtube.player.YouTubePlayerView
-        android:id="@+id/youtubePlayerIO"
+    <fragment
+        android:id="@+id/youtubeFragmentInputOutput"
+        android:name="com.google.android.youtube.player.YouTubePlayerFragment"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
@@ -18,7 +20,8 @@
         android:layout_height="wrap_content"
         android:background="?attr/colorAccent"
         android:minHeight="?attr/actionBarSize"
-        >
+        app:theme="@style/BackArrowWhite">
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -26,6 +29,24 @@
             android:textColor="@android:color/white"
             android:textSize="22sp" />
     </android.support.v7.widget.Toolbar>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:elevation="6dp"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:tabIndicatorColor="?attr/colorAccent"
+        app:tabSelectedTextColor="@android:color/black"
+        app:tabTextColor="@android:color/black" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tab_layout" />
 
 
 </LinearLayout>

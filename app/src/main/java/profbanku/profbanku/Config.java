@@ -10,5 +10,5 @@ public final class Config {
 
     }
 
-    public static final String DEVELOPER_KEY = "AIzaSyBV3TJN5zJmo5Rt_nDfcwXudf5y-AwDv_w";
+    public static final String DEVELOPER_KEY = "AIzaSyBsBtDWgms_9eXX_diZU0ul1jhh64tmOxc";
 }

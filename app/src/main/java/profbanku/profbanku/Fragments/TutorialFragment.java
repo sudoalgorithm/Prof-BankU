@@ -9,7 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
-import profbanku.profbanku.GkActivities.GeneralKnowledgeActivity;
+import profbanku.profbanku.GKActivities.GeneralKnowledgeActivity;
 import profbanku.profbanku.QuantitativeAptitudeActivities.QuantitativeAptitudeActivity;
 import profbanku.profbanku.R;
 import profbanku.profbanku.ReasoningActivities.ReasoningActivity;

@@ -21,7 +21,7 @@ import com.google.android.youtube.player.YouTubePlayerFragment;
 import profbanku.profbanku.Config;
 import profbanku.profbanku.R;
 
-import static profbanku.profbanku.R.id.youtubeFragmentDirectionDistance;
+import static profbanku.profbanku.R.id.youtubeFragmentInputOutput;
 
 public class InputOutputActivity extends AppCompatActivity {
 
@@ -47,7 +47,7 @@ public class InputOutputActivity extends AppCompatActivity {
             mActionBar.setDisplayShowTitleEnabled(false);
         }
 
-        mYouTubePlayerFragment = (YouTubePlayerFragment) getFragmentManager().findFragmentById(youtubeFragmentDirectionDistance);
+        mYouTubePlayerFragment = (YouTubePlayerFragment) getFragmentManager().findFragmentById(youtubeFragmentInputOutput);
         mYouTubePlayerFragment.initialize(Config.DEVELOPER_KEY, new YouTubePlayer.OnInitializedListener() {
             @Override
             public void onInitializationSuccess(YouTubePlayer.Provider provider, YouTubePlayer youTubePlayer, boolean b) {
