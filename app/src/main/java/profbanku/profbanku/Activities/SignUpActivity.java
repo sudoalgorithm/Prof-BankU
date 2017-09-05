@@ -10,6 +10,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.squareup.picasso.Picasso;
 
@@ -20,6 +21,7 @@ public class SignUpActivity extends AppCompatActivity {
     private ImageView mImageView;
     private EditText mEditText1,mEditText2,mEditText3,mEditText4;
     private Button mButton;
+    private TextView mTextView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,6 +41,14 @@ public class SignUpActivity extends AppCompatActivity {
 
         mButton = (Button) findViewById(R.id.sign_up_btn);
         mButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(SignUpActivity.this, MainActivity.class));
+            }
+        });
+
+        mTextView = (TextView) findViewById(R.id.sign_in_text_view);
+        mTextView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(SignUpActivity.this, MainActivity.class));

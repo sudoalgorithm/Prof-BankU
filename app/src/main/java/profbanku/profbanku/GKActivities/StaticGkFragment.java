@@ -14,7 +14,7 @@ import profbanku.profbanku.R;
 
 public class StaticGkFragment extends android.support.v4.app.Fragment {
 
-    private String mDataSet[] = {"Biology","Physics","Chemistry"};
+    private String mDataSet[] = {"Biology","Physics","Chemistry","Country-Currency-Capital","Dams","Classical dances","International Organisations","Stock Indices","Constitution of India"};
 
     public StaticGkFragment() {
     }
@@ -38,6 +38,24 @@ public class StaticGkFragment extends android.support.v4.app.Fragment {
                     case 2:
                         startActivity(new Intent(getContext(), ChemistryActivity.class));
                         break;
+                    case 3:
+                        startActivity(new Intent(getContext(), CCC.class));
+                        break;
+                    case 4:
+                        startActivity(new Intent(getContext(), Dams.class));
+                        break;
+                    case 5:
+                        startActivity(new Intent(getContext(), ClassicalDances.class));
+                        break;
+                    case 6:
+                        startActivity(new Intent(getContext(), InternationalOrganisations.class));
+                        break;
+                    case 7:
+                        startActivity(new Intent(getContext(), StockIndices.class));
+                        break;
+                    case 8:
+
+
                 }
             }
         });

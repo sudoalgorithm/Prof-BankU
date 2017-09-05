@@ -328,24 +328,30 @@
         <activity
             android:name=".Activities.SignUpActivity"
             android:theme="@style/ActivityTheme" />
-        <activity android:name=".GKActivities.StaticGkFragment"
-            android:theme="@style/ActivityTheme"
-            />
-        <activity android:name=".GKActivities.DynamicGkFragment"
-            android:theme="@style/ActivityTheme"
-            />
-        <activity android:name=".GKActivities.BioActivity"
-            android:theme="@style/ActivityTheme"
+        <activity
+            android:name=".GKActivities.StaticGkFragment"
+            android:theme="@style/ActivityTheme" />
+        <activity
+            android:name=".GKActivities.DynamicGkFragment"
+            android:theme="@style/ActivityTheme" />
+        <activity
+            android:name=".GKActivities.BioActivity"
             android:parentActivityName=".GKActivities.GeneralKnowledgeActivity"
-            />
-        <activity android:name=".GKActivities.PhysicsActivity"
-            android:theme="@style/ActivityTheme"
+            android:theme="@style/ActivityTheme" />
+        <activity
+            android:name=".GKActivities.PhysicsActivity"
             android:parentActivityName=".GKActivities.GeneralKnowledgeActivity"
-            />
-        <activity android:name=".GKActivities.ChemistryActivity"
-            android:theme="@style/ActivityTheme"
+            android:theme="@style/ActivityTheme" />
+        <activity
+            android:name=".GKActivities.ChemistryActivity"
             android:parentActivityName=".GKActivities.GeneralKnowledgeActivity"
-            ></activity>
+            android:theme="@style/ActivityTheme" />
+        <activity android:name=".GKActivities.CCC" />
+        <activity android:name=".GKActivities.Dams" />
+        <activity android:name=".GKActivities.ClassicalDances" />
+        <activity android:name=".GKActivities.InternationalOrganisations" />
+        <activity android:name=".GKActivities.StockIndices" />
+        <activity android:name=".GKActivities.ConstitutionOfIndia"></activity>
     </application>
 
 </manifest>

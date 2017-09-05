@@ -113,5 +113,20 @@
         android:text="Sign Up"
         android:textColor="?attr/colorAccent" />
 
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#EEEEEE"/>
+
+    <TextView
+        android:id="@+id/sign_in_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Sign In"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"
+        />
+
 
 </LinearLayout>
