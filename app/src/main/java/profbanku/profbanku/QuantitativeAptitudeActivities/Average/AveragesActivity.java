@@ -122,10 +122,10 @@ public class AveragesActivity extends AppCompatActivity {
                     FactsheetAverageActivity tab1 = new FactsheetAverageActivity();
                     return tab1;
                 case 1:
-                    QuestionAverageActivity tab2 = new QuestionAverageActivity();
+                    VideosAverageActivity tab2 = new VideosAverageActivity();
                     return tab2;
                 case 2:
-                    VideosAverageActivity tab3 = new VideosAverageActivity();
+                    QuestionAverageActivity tab3 = new QuestionAverageActivity();
                     return tab3;
                 default:
                     return null;

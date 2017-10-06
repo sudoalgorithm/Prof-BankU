@@ -54,8 +54,10 @@ public class StaticGkFragment extends android.support.v4.app.Fragment {
                         startActivity(new Intent(getContext(), StockIndices.class));
                         break;
                     case 8:
-
-
+                        startActivity(new Intent(getContext(), ConstitutionOfIndia.class));
+                        break;
+                    default:
+                        break;
                 }
             }
         });

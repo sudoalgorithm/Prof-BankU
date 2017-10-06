@@ -346,12 +346,30 @@
             android:name=".GKActivities.ChemistryActivity"
             android:parentActivityName=".GKActivities.GeneralKnowledgeActivity"
             android:theme="@style/ActivityTheme" />
-        <activity android:name=".GKActivities.CCC" />
-        <activity android:name=".GKActivities.Dams" />
-        <activity android:name=".GKActivities.ClassicalDances" />
-        <activity android:name=".GKActivities.InternationalOrganisations" />
-        <activity android:name=".GKActivities.StockIndices" />
-        <activity android:name=".GKActivities.ConstitutionOfIndia"></activity>
+        <activity android:name=".GKActivities.CCC"
+            android:parentActivityName=".GKActivities.GeneralKnowledgeActivity"
+            android:theme="@style/ActivityTheme"
+            />
+        <activity android:name=".GKActivities.Dams"
+            android:parentActivityName=".GKActivities.GeneralKnowledgeActivity"
+            android:theme="@style/ActivityTheme"
+            />
+        <activity android:name=".GKActivities.ClassicalDances"
+            android:parentActivityName=".GKActivities.GeneralKnowledgeActivity"
+            android:theme="@style/ActivityTheme"
+            />
+        <activity android:name=".GKActivities.InternationalOrganisations"
+            android:parentActivityName=".GKActivities.GeneralKnowledgeActivity"
+            android:theme="@style/ActivityTheme"
+            />
+        <activity android:name=".GKActivities.StockIndices"
+            android:parentActivityName=".GKActivities.GeneralKnowledgeActivity"
+            android:theme="@style/ActivityTheme"
+            />
+        <activity android:name=".GKActivities.ConstitutionOfIndia"
+            android:parentActivityName=".GKActivities.GeneralKnowledgeActivity"
+            android:theme="@style/ActivityTheme"
+            />
     </application>
 
 </manifest>

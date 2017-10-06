@@ -5,6 +5,8 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
 
 import profbanku.profbanku.R;
 
@@ -12,6 +14,13 @@ public class VideosDIFragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.activity_videos_difragment,container,false);
+        View view = inflater.inflate(R.layout.activity_videos_difragment,container,false);
+        String[] index = new String[4];
+        for (int i = 0; i < index.length; i++){
+            index[i] = "Video "+(i+1);
+        }
+        ListView listView = (ListView) view.findViewById(R.id.list_view_di);
+        listView.setAdapter(new ArrayAdapter<String>(getContext(), R.layout.list_item_row, R.id.tv_list_item_row, index));
+        return  view;
     }
 }
